@@ -6,6 +6,46 @@
     <!-- External Style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <!-- Animation formatting -->
+    <style>
+        div#mydiv {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 14s;
+            /* making the animation display longer before transitioning its position */
+            animation-delay: 3s;
+            /* making the animation repetite infinitely*/
+            animation-iteration-count: infinite;
+            /* changes/inverts the initial left to right direction defined in keyframes below */
+            animation-direction: reverse;
+            /* takes a clockwise transition at first then an anticlockwise later */
+            animation-direction: alternate;
+
+        }
+        /* @keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        } */
+        /* @keyframes example {
+            #the time is divided into 4 and the below colors rendered on screen
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            100% {background-color: green;}
+        } */
+        @keyframes example {
+            /* the time is divided into 4 and the below colors rendered on screen */
+            /* the postion changes as it draws squares which change colors in different psn of the screen */
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0px; top: 200px;}
+            100% {background-color: red;left: 0px; top: 0px;}
+        }
+    </style>
     <!--
     Hyper- link formatting
     <style type="text/css">
@@ -115,6 +155,7 @@
     -->
 
     <!-- Lists -->
+    <!--  
     <p>Unordered nested lists(By default)</p> 
     <ul>
         <li>Tea</li>
@@ -212,6 +253,10 @@
         <li style="float: left; width: 10%;">Gallery</li>
         <li style="float: left; width: 10%;" >Contact</li>
     </ul>
+    -->
+
+    <!-- Animations -->
+    <div id = "mydiv"></div>
 
 </body>
 
