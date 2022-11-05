@@ -2,10 +2,13 @@
 
 <head>
     <title>CSS Examples</title>
-    <!-- Page-level/External Style sheet -->
+     
+    <!-- External Style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <!-- Page-Level/Internal/Embedded style attribute  -->
-    <!-- <style type="text/css">
+    <!-- 
+    <style type="text/css">
         h1 {
             color: blueviolet;
             font-family: 'Trebuchet MS';
@@ -14,28 +17,28 @@
             color: aqua;
             text-decoration: underline;
         }
-    </style> -->
+    </style> 
+    -->
 </head>
 
  
 <body>
+    <!-- local/inline style attribute -->
     <!--
-    local/inline style attribute
     <h1 style="color: blue; font-family: sans-serif;"> Welcome to this course </h1>
     style above won't apply here
     <h1>Let's get started</h1>
     <h2> Easy learning </h2>
     -->
-</body>
-
-
-<body>
-    <h1 > Welcome to this course </h1>
-    <!-- passing specific formatting to a particular line we use inline -->
+    <!-- 
+    <h1 > Welcome to this course </h1> 
+    passing specific formatting to a particular line we use inline 
     <h1 style="text-decoration: line-through;">Let's get started</h1>
-    <h2> Easy learning </h2>
+    <h2> Easy learning </h2> 
+    -->
 
     <!-- fonts -->
+    <!--
     <p style="font-family: Trebuchet MS;">Applied a font family</p>
     <p style="font-style: italic;">This is italic</p>
     <p style="font-variant: small-caps;">This is Small-Caps Example</p>
@@ -43,7 +46,34 @@
     <p style="font-size: 30px;">This font size is 30px</p>
     <p style="font-size: small;">This font size is small</p>
     <p style="font-size: large;">This font size is large</p>
-    <p style="font: italic small-caps bold 15px georgia;">This is a shorter way to apply multiple styling</p>
+    <p style="font: italic small-caps bold 15px georgia;">This is a shorter way to apply multiple styling</p> 
+    -->
+
+    <!-- Text formatting -->
+
+    <p style="color: red;">Paragraph with red color</p>
+    <p style="direction: rtl;">Praghraph right to left</p>
+    <p style="letter-spacing: 5px;">Paraghraph with letter spacing of 5px</p>
+    <p style="word-spacing: 5px;">Paraghraph with letter spacing of 5px</p>
+    <p style="text-indent: 1cm;">Paraghraph with text indent 1cm</p>
+    <br>
+    <br>
+
+    <!-- Text Decorations -->
+    <p style="text-decoration: underline;">This will be underlined</p>
+    <p style="text-decoration: line-through;">This will be Strike Through</p>
+    <p style="text-decoration: overline;">This will have an overline</p>
+    <p style="text-decoration: blink;">This text will have blinking effect</p>
+    <br>
+    <br>
+
+    <!-- Text transformation -->
+    <p style="text-transform: capitalize;">This will be capitalize</p>
+    <br>
+    <br>
+
+    <!-- Text shadow -->
+    <p style="text-shadow: 8px 8px blue;">This is text with shadow</p>
 </body>
 
 </html>
