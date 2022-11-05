@@ -6,7 +6,26 @@
     <!-- External Style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- Animation formatting -->
+    <!-- 2D Transformation -->
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+        div#mydiv {
+            /* forward direction rotation */
+            transform: rotate(20deg);
+            /* reverse direction rotation */
+            transform: rotate(-20deg);
+            /* Skewwing gets applied in x-axis*/
+            transform: skewX(20deg);
+            /* Skewwing gets applied in y-axis*/
+            transform: skewY(20deg);
+        }
+    </style>
+    <!-- Animation formatting
     <style>
         div#mydiv {
             width: 150px;
@@ -46,6 +65,7 @@
             100% {background-color: red;left: 0px; top: 0px;}
         }
     </style>
+    -->
     <!--
     Hyper- link formatting
     <style type="text/css">
@@ -256,7 +276,17 @@
     -->
 
     <!-- Animations -->
+    <!--
     <div id = "mydiv"></div>
+    -->
+
+    <!-- 2D Transform -->
+    <div>This is box 1</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id = "mydiv">This is box 2</div>
 
 </body>
 
