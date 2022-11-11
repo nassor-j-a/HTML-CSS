@@ -6,6 +6,40 @@
     <!-- External Style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <!-- Padding -->
+    <style>
+        #p1 {
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            border: 1px solid black;
+        }
+        #p2 {
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 5%;
+            border: 1px solid black;
+        }
+        #p3 {
+            padding: 15px;
+            border: 1px solid black;
+        }
+        #p4 {
+            padding: 10px 2%;
+            border: 1px solid black;
+        }
+        #p5 {
+            padding: 10px 2% 10px;
+            border: 1px solid black;
+        }
+        #p6 {
+            padding: 10px 2% 10px 10px;
+            border: 1px solid black;
+        }
+    </style>
+    
     <!-- Colors -->
     <!-- <style>
         /* using hsl */
@@ -21,6 +55,7 @@
         #p2 {background-color: rgba(0, 255, 0, 0.3);}
         #p3 {background-color: rgba(0, 0, 255, 0.3);} */
     </style> -->
+
     <!-- 3D Transformation -->
     <!-- <style>
         div {
@@ -39,6 +74,7 @@
             transform: rotateX(150deg);
         }
     </style> -->
+
     <!-- 2D Transformation -->
     <!-- <style>
         div {
@@ -58,6 +94,7 @@
             transform: skewY(20deg);
         }
     </style> -->
+
     <!-- Animation formatting
     <style>
         div#mydiv {
@@ -110,8 +147,7 @@
         a:hover {color: red; text-decoration: underline;}
         a:active {color: green;}
 
-    </style>
-    -->
+    </style> -->
 
     <!-- Page-Level/Internal/Embedded style attribute  -->
     <!-- 
@@ -124,8 +160,7 @@
             color: aqua;
             text-decoration: underline;
         }
-    </style> 
-    -->
+    </style> -->
 </head>
 
  
@@ -347,7 +382,7 @@
     <p id="p3">Blue</p> -->
 
     <!-- Cursors -->
-    <p>Move the mouse over the words to see cursor changes</p>
+    <!-- <p>Move the mouse over the words to see cursor changes</p>
 
     <div style="cursor: auto;">Auto</div>
     <br>
@@ -391,7 +426,30 @@
     <div style="cursor: wait;">Wait</div>
     <br>
     <br>
-    <div style="cursor: help;">Help</div>
+    <div style="cursor: help;">Help</div> -->
+
+    <!-- Padding -->
+    <p id="p1">This a paraghraph with a specified bottom padding</p>
+    <br>
+    <br>
+    <p id="p2">This a paraghraph with a specified bottom padding in percent</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="p3">All four padding will be 15px</p>
+    <p id="p4">Top and bottom padding will be 10px,
+        left and right padding will be 2% of the total width of the document
+    </p>
+    <p id="p5">Top padding will be 10px,
+        left and right padding will be 2% of the total width of the document,
+        bottom padding will be 10px
+    </p>
+    <p id="p6">Top padding will be 10px,
+        right padding will be 2% of the total width of the document,
+        bottom an left padding will be 10px
+    </p>
+
 
 </body>
 
