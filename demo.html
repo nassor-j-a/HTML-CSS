@@ -6,8 +6,26 @@
     <!-- External Style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- 2D Transformation -->
+    <!-- 3D Transformation -->
     <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+        div#mydiv3 {
+            transform: rotateZ(150deg);
+        }
+        div#mydiv2 {
+            transform: rotateY(150deg);
+        }
+        div#mydiv1 {
+            transform: rotateX(150deg);
+        }
+    </style>
+    <!-- 2D Transformation -->
+    <!-- <style>
         div {
             width: 300px;
             height: 100px;
@@ -24,7 +42,7 @@
             /* Skewwing gets applied in y-axis*/
             transform: skewY(20deg);
         }
-    </style>
+    </style> -->
     <!-- Animation formatting
     <style>
         div#mydiv {
@@ -281,12 +299,32 @@
     -->
 
     <!-- 2D Transform -->
-    <div>This is box 1</div>
+    <!-- <div>This is box 1</div>
     <br>
     <br>
     <br>
     <br>
-    <div id = "mydiv">This is box 2</div>
+    <div id = "mydiv">This is box 2</div> -->
+
+    <!-- 3D Transform -->
+
+    <div>This is Box 1</div>
+    <p>Rotate X-axis</p>
+    <div id="mydiv1">This is box 2</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>This is Box 1</div>
+    <p>Rotate Y-axis</p>
+    <div id="mydiv2">This is box 2</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>This is Box 1</div>
+    <p>Rotate Z-axis</p>
+    <div id="mydiv3">This is box 2</div>
 
 </body>
 
