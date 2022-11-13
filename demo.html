@@ -6,8 +6,60 @@
     <!-- External Style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- Scrollbars -->
+    <!-- Selectors -->
     <style>
+        /* Universal selectors */
+        /* Selects all elements */
+        * {
+            text-decoration: line-through;
+        }
+        
+        /* Name selector */
+        p {
+            font-size: 30;
+        }
+        h2 {
+            color: green;
+            text-decoration: underline;
+        }
+        /* styling two elements together */
+        b,i {
+            text-decoration: underline;
+        }
+        /* Nesting a style */
+        p b {
+            background-color: aqua;
+            /* Removing the underline that was applied on the previous bold tags */
+            text-decoration: none;
+            font-size: 20;
+        }
+
+        /* Class selectors */
+        .style1 {
+            color: purple;
+            font-family: cursive;
+            text-decoration: none;
+        }
+        .style2 {
+            color: red;
+            font-family: Times New Roman;
+            font-size: 40;
+        }
+
+        /* Id selectors */
+        #mydiv {
+            display: inline-block;
+            text-align: center;
+            padding: 40px;
+            width: 400px;
+            height: 200px;
+            background-color: aquamarine;
+            border-radius: 50%;
+        }
+    </style>
+    
+    <!-- Scrollbars -->
+    <!-- <style>
         .scroll {
             display: block;
             border: 1px solid red;
@@ -18,7 +70,7 @@
             /* Places the scrollbar if there is content overflow in the defined dimension */
             overflow: scroll;
         }
-    </style>
+    </style> -->
     
     <!-- Visibility -->
     <!-- <style>
@@ -620,12 +672,33 @@
     <p id="p2">This paragraph should not be visible</p> -->
 
     <!-- Scrollbars -->
-    <p>Example of scroll value :</p>
+    <!-- <p>Example of scroll value :</p>
     <div class="scroll">
         I am going to keep a lot of content here just to show you 
         how scrollbars works if there is content overflow in an 
         element box. This provides horizontal as well as vertical scrollbars
         
+    </div> -->
+
+    <!-- Selectors -->
+    <h1>Name Selector:</h1>
+    <h2>Heading two on name Selectors</h2>
+    <b>This is bold</b>
+    <br><br>
+    <i>This is italic</i>
+    <p>This is a<b> nested style</b></p>
+    <br>
+
+
+    <h1>Class Selector:</h1>
+    <h2 class="style1">Heading two on class selectors</h2>
+    <p class="style2">This is a paraghraph for class selectors</p>
+    <br>
+
+    <h1>Id Selector:</h1>
+    <div id="mydiv">
+        <h2>Heading two on Id selectors</h2>
+        <p >This is a paraghraph for Id selectors</p>
     </div>
 
 </body>
